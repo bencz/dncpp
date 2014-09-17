@@ -1,22 +1,27 @@
-public class Sample1 {
-    public void Print(string str) {
-	 System.Console.WriteLine(150);
- 	 System.Console.Write("Sample1: ");
+public class TestClass1
+{
+    public void Print(string str)
+    {
  	 System.Console.WriteLine(str);
     }
 }
 
-public class Sample2 {
-    public void Print2(string str) {
- 	 System.Console.Write("Sample2: ");
+public class Program
+{
+    public void Print2(string str)
+    {
+ 	 System.Console.Write("HI!");
  	 System.Console.WriteLine(str);
     }
 
-    static void Main() {
-        string str = "Hello World!";
-	Sample1 hello1 = new Sample1();
- 	hello1.Print(str);
-	Sample2 hello2 = new Sample2();
- 	hello2.Print2(str);
+    static void Main()
+    {
+        string msg = "hello!!!";
+
+	TestClass1 tstClass1 = new TestClass1();
+ 	tstClass1.Print(msg);
+
+	Program tstClass2 = new Program();
+ 	tstClass2.Print2(msg);
     }
 }
